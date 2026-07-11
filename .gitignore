@@ -1,0 +1,98 @@
+##############################
+# Python
+##############################
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+##############################
+# Node
+##############################
+node_modules/
+dist/
+build/
+
+##############################
+# Environment
+##############################
+.env
+.env.*
+!.env.example
+
+##############################
+# IDE
+##############################
+.vscode/
+.idea/
+
+##############################
+# Logs
+##############################
+*.log
+
+##############################
+# OS
+##############################
+.DS_Store
+Thumbs.db
+
+##############################
+# Generated RAG Data
+##############################
+embeddings/
+embeddings4/
+faiss_index/
+faiss_index4/
+
+graph/
+graph_1/
+graph_2/
+graph_3/
+graph_4/
+graph4/
+graph_a4/
+graph_po4/
+graph_stage3/
+graph_stage4/
+
+processed/
+processed1/
+processed2/
+processed3/
+
+semantic_a/
+semantic_me/
+semantic_me4/
+semantic_stage1/
+
+semantic_chunks/
+semantic_chunks4/
+semantic_chunks5/
+semantic_chunks6/
+semantic_chunks7/
+semantic_chunks_a4/
+
+temp_uploads/
+scratch/
+
+##############################
+# Databases
+##############################
+chroma_db/
+dbv1/
+dbv2/
+
+##############################
+# User Data
+##############################
+pdfs/
+data/
+pro4/
+
+##############################
+# Temporary Files
+##############################
+*.zip
+.ipynb_checkpoints/

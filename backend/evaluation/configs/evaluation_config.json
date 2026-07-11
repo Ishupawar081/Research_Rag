@@ -1,0 +1,17 @@
+{
+    "targets": {
+        "metadata_precision": 99.0,
+        "retrieval_precision": 95.0,
+        "retrieval_recall": 95.0,
+        "relevant_section_accuracy": 95.0,
+        "faithfulness": 95.0,
+        "groundedness": 95.0,
+        "hallucination": 2.0,
+        "overall_pass_rate": 95.0
+    },
+    "llm": {
+        "model": "qwen2.5:1.5b",
+        "timeout": 30,
+        "temperature": 0.0
+    }
+}

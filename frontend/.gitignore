@@ -1,0 +1,121 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+##############################
+# Python
+##############################
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+##############################
+# Environment
+##############################
+.env
+.env.*
+!.env.example
+
+##############################
+# Node
+##############################
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+build/
+
+##############################
+# IDE
+##############################
+.vscode/
+.idea/
+
+##############################
+# OS
+##############################
+.DS_Store
+Thumbs.db
+
+##############################
+# Logs
+##############################
+*.log
+
+##############################
+# Jupyter
+##############################
+.ipynb_checkpoints/
+
+##############################
+# Generated RAG Data
+##############################
+backend/data/
+data/
+pdfs/
+temp_uploads/
+
+embeddings/
+embeddings4/
+
+faiss_index/
+faiss_index4/
+
+graph/
+graph_*/
+graph4/
+graph_a4/
+graph_po4/
+graph_stage3/
+graph_stage4/
+
+semantic_chunks*/
+semantic_a/
+semantic_me/
+semantic_me4/
+semantic_stage1/
+
+processed/
+processed1/
+processed2/
+processed3/
+
+pro4/
+
+paper_registry2/
+
+##############################
+# Databases
+##############################
+chroma_db/
+dbv1/
+dbv2/
+
+##############################
+# Temporary
+##############################
+*.zip
+scratch/
