@@ -1,12 +1,16 @@
 import json
 import requests
 import time
+import os
 
 # ==========================================================
 # CONFIG
 # ==========================================================
 
-OLLAMA_URL = "http://localhost:11434/api/generate"
+OLLAMA_URL = os.getenv(
+    "OLLAMA_URL",
+    "http://localhost:11434/api/generate"
+)
 
 DEFAULT_MODEL = "qwen2.5:1.5b"
 

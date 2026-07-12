@@ -3,6 +3,7 @@ import { Box, Typography, LinearProgress, Paper, IconButton } from "@mui/materia
 import { motion, AnimatePresence } from "framer-motion";
 import { X, UploadCloud, Rocket } from "lucide-react";
 import { supabase } from "../../lib/supabase";
+import { API_URL } from "../../config/api";
 
 export default function UploadOverlay({ open, onClose, onComplete }) {
     const [file, setFile] = useState(null);
@@ -36,8 +37,7 @@ export default function UploadOverlay({ open, onClose, onComplete }) {
                 headers["Authorization"] = `Bearer ${session.access_token}`;
             }
 
-            const backendUrl = import.meta.env.VITE_BACKEND_URL || "http://localhost:8000";
-            const response = await fetch(`${backendUrl}/upload`, {
+            const response = await fetch(`${API_URL}/upload`, {
                 method: "POST",
                 headers,
                 body: formData,

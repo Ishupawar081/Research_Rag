@@ -1,8 +1,9 @@
 import axios from "axios";
 import { supabase } from "../lib/supabase";
+import { API_URL } from "../config/api";
 
 export const api = axios.create({
-    baseURL: import.meta.env.VITE_BACKEND_URL || "http://127.0.0.1:8000"
+    baseURL: API_URL
 });
 
 api.interceptors.request.use(async (config) => {
@@ -38,7 +39,7 @@ export async function chat(data) {
                 return {
                     success: false,
                     error: "Cannot reach the backend server. " +
-                           "Make sure the FastAPI server is running on port 8000."
+                           "Make sure the backend server is running and accessible."
                 };
             }
             // Connection was reset while waiting (common when request takes very long)
